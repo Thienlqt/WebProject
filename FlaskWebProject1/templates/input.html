@@ -1,0 +1,33 @@
+{% block content %}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tracker</title>
+    <link rel="stylesheet" href="/static/tracking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Input</div>
+        <form action="/Calculate" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Minutes</span>
+                    <input type="number" name="minute" placeholder="Enter Minutes" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Weight</span>
+                    <input type="number" name="kg" placeholder="Enter your Weight" required>
+                </div>
+                <div class="button">
+                <input type="submit" value="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}
+

@@ -1,0 +1,16 @@
+{% block content %}
+<link rel="stylesheet" href="/static/result.css">
+<body>
+    <div class="title">Output</div>
+    <div class="output-box">
+        <div class="output" id="calorie"> Calories Burned: {{ calories_burned }} Kcal </div>
+    </div>
+    <div class="output-box">
+        <div class="output" id="distance"> Distance Traveled: {{ distance }} kms </div>
+    </div>
+    <div class="output-box">
+        <div class="output" id="time_elapsed"> Time Elapsed: {{ time_diff }} seconds </div>
+    </div>
+</body>
+
+{% endblock %}
